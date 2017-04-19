@@ -1,11 +1,66 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#93F9B9</item>
+        <item name="colorPrimaryDark">#60aa84</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btn_green" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_btn_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <!--item name="android:textStyle">bold</item-->
+        <item name="android:padding">2dp</item>
+        <!--item name="android:layout_marginTop">100dp</item-->
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="white_text" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="btn_white" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/cal_btn_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <!--item name="android:textStyle">bold</item-->
+        <item name="android:padding">2dp</item>
+        <!--item name="android:layout_marginTop">100dp</item-->
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/primary</item>
+    </style>
 </resources>
+

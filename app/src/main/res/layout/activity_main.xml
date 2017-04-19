@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.var_app.var_app.MainActivity">
+    android:background="#F3F5F6"
+    android:weightSum="1">
+
 
     <TextView
+        android:text="WELCOME"
+        android:layout_marginTop="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView13"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="285dp"
+        android:gravity="center_vertical"
+        >
+
+
+        <Button
+
+            android:id="@+id/cal1butt"
+            style="@style/btn_white"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:drawableTop="@drawable/scale1"
+            android:text="คำนวณโดยน้ำหนัก"
+            android:textColor="@color/black" />
+
+        <Button
+
+            android:id="@+id/cal2butt"
+            style="@style/btn_white"
+            android:layout_marginLeft="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:drawableTop="@drawable/bar1"
+            android:text="แสกนเลย"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</LinearLayout>

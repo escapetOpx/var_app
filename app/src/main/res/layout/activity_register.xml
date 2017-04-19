@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bcolor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+
+        >
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <!-- Name Label -->
+
+        <EditText
+            android:id="@+id/inUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:hint="ชื่อผู้ใช้"
+            android:inputType="text|textAutoComplete" />
+
+
+        <EditText android:id="@+id/inPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="รหัสผ่าน" />
+
+        <EditText android:id="@+id/inName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="14dp"
+
+            android:layout_marginTop="20dp"
+            android:hint="ชื่อ-นามสกุล" />
+
+
+        <EditText android:id="@+id/inTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:hint="เบอร์โทรศัพท์"/>
+
+        <EditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress" />
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/btn_green"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="ลงทะเบียน" />
+
+        <TextView
+            android:text="กลับสู่หน้าล็อกอิน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToLogin"
+            android:textAlignment="textStart"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+</ScrollView>
