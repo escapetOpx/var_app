@@ -78,7 +78,7 @@ public class APIRequest extends AsyncTask<Void, Void, String> {
                 if (status.equals("success")) {
                     apiResponse.onSuccess(resultJson.getString("data"));
                 } else if (status.equals("error")) {
-                    apiResponse.onError(resultJson.getString("errno"), resultJson.getString("message"));
+                    apiResponse.onError(resultJson.getString("message"));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -104,7 +104,7 @@ public class APIRequest extends AsyncTask<Void, Void, String> {
     public interface APIResponse {
         void onSuccess(String result);
 
-        void onError(String errno, String error);
+        void onError(String error);
     }
 
 }

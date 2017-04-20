@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -53,10 +54,17 @@ public class CalculatorActivity extends AppCompatActivity {
                 calButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        int weight = Integer.parseInt(weightEdittext.getText().toString());
-                        int i = weight * priceList.get(position);
-                        Log.i("SUM", String.valueOf(i));
-                        valueTextview.setText(String.valueOf(i) + " Baht.");
+                        if (!weightEdittext.getText().toString().equals("")) {
+                            int weight = Integer.parseInt(weightEdittext.getText().toString());
+                            int i = weight * priceList.get(position);
+                            Log.i("SUM", String.valueOf(i));
+                            valueTextview.setText(String.valueOf(i) + " Baht.");
+                        } else {
+                            Toast.makeText(getApplicationContext(),
+                                    "Please enter the weight!", Toast.LENGTH_LONG)
+                                    .show();
+                        }
+
                     }
                 });
             }

@@ -61,8 +61,8 @@ public class MainActivity extends Activity {
         cal2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MainActivity.this, ScanerBarcode.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, ScanerBarcode.class);
+                startActivity(intent);
             }
         });
 

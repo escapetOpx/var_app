@@ -83,7 +83,7 @@ public class LoginActivity extends Activity {
             }
 
             @Override
-            public void onError(String errno, String error) {
+            public void onError(String error) {
                 hideDialog();
                 Toast.makeText(getApplicationContext(), "Error " + error, Toast.LENGTH_LONG).show();
 

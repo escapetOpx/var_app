@@ -1,52 +1,43 @@
 package com.var_app.var_app;
 
-import android.content.Intent;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.util.Log;
 
-public class ScanerBarcode extends AppCompatActivity {
+import me.dm7.barcodescanner.zbar.Result;
+import me.dm7.barcodescanner.zbar.ZBarScannerView;
 
-    private TextView result;
-    private Button scan;
+public class ScanerBarcode extends Activity implements ZBarScannerView.ResultHandler {
+    private ZBarScannerView mScannerView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scaner_barcode);
-
-        scan = (Button)findViewById(R.id.scan);
-        result = (TextView)findViewById(R.id.reslut);
-
-        scan.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                //TODO Auto-generated method stub
-                try{
-                    Intent intentOption = new Intent("com.google.zxing.client.android.SCAN");
-                    intentOption.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                    startActivityForResult(intentOption,0);
-                } catch(Exception e){
-                    //TODO handle exception
-                    Toast.makeText(getBaseContext(),"Please Install Barcode Scanner", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-        });
-
+    public void onCreate(Bundle state) {
+        super.onCreate(state);                      // Programmatically initialize the scanner view
+        setContentView(R.layout.activity_scaner_barcode);                // Set the scanner view as the content view
+        mScannerView = (ZBarScannerView) findViewById(R.id.scanner);
     }
+
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        // TODO Auto-generated method stub
-        if (requestCode == 0)
-        {
-            if (resultCode == RESULT_OK)
-            {
-                String contents = getIntent().getStringExtra("SCAN_RESULT");
-                result.setText(contents);
-            }
-        }
+    public void onResume() {
+        super.onResume();
+        mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
+        mScannerView.startCamera();          // Start camera on resume
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mScannerView.stopCamera();           // Stop camera on pause
+    }
+
+    @Override
+    public void handleResult(Result rawResult) {
+        // Do something with the result here
+        Log.v("Scanner", rawResult.getContents()); // Prints scan results
+        Log.v("Scanner", rawResult.getBarcodeFormat().getName()); // Prints the scan format (qrcode, pdf417 etc.)
+
+        // If you would like to resume scanning, call this method below:
+        mScannerView.resumeCameraPreview(this);
+    }
+
 }
