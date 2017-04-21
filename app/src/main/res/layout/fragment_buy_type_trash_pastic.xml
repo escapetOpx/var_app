@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout style="@style/block_text_buy_type_trash_design">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView500"
+                                style="@style/black_type_trash_text"
+                                android:text="ทั้งหมด" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_buy_type_trash_design">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView50"
+                                style="@style/black_type_trash_text"
+                                android:text="PET ใส สะอาด" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+                <LinearLayout style="@style/block_text_buy_type_trash_design">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5000"
+                            style="@style/black_type_trash_text"
+                            android:text="PET สี" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

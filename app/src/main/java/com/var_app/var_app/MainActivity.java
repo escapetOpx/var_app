@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.var_app.var_app.helper.UserInfo;
 
 public class MainActivity extends Activity {

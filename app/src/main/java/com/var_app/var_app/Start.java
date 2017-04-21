@@ -13,6 +13,7 @@ public class Start extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+
         Handler myHandler = new Handler();
         myHandler.postDelayed(new Runnable() {
             @Override

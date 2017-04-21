@@ -27,7 +27,7 @@ public class UserInfo {
             email       = tryGetString(obj,"user_email");
             fullName    = tryGetString(obj,"user_firstname");
             phone       = tryGetString(obj,"user_tel");
-            point       = tryGetString(obj, "user_point");
+            point       = tryGetString(obj,"user_point");
 
             if (onChangeListener != null) {
                 onChangeListener.onChange();

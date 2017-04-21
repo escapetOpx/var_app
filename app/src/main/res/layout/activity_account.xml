@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#F3F5F6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_menu_picuser" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/block_text_account_design">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView500"
+                            style="@style/black_account_main_text"
+                            android:text="ชื่อ - นามสกุล" />
+
+                        <TextView
+                            android:id="@+id/textView570"
+                            style="@style/gray_account_sub_text"
+                            android:text="ศุภเสกข์ จันทร์จรัสวัฒนา" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_account_design">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/black_account_main_text"
+                            android:text="ชื่อผู้ใช้" />
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            style="@style/black_account_sub_text"
+                            android:text="Suphasek" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_account_design">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/black_account_main_text"
+                            android:text="รหัสผ่าน" />
+
+                        <TextView
+                            android:id="@+id/textView578690"
+                            style="@style/black_account_sub_text"
+                            android:text="000000000" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_account_design">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/black_account_main_text"
+                            android:text="เบอร์โทรศัพท์" />
+
+                        <TextView
+                            android:id="@+id/textw5690"
+                            style="@style/black_account_sub_text"
+                            android:text="0895119144" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_account_design">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/black_account_main_text"
+                            android:text="E-mail" />
+
+                        <TextView
+                            android:id="@+id/textw56790"
+                            style="@style/black_account_sub_text"
+                            android:text="suphasek.janj@bumail.net" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+            <LinearLayout
+                style="@style/block_fix_3btn_design"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/green_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+
+                        android:text="แก้ไข" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/line_ver_design"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="#ff6666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:text="ออกจากระบบ" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_design"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textw775670"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="ออกจากระบบ" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

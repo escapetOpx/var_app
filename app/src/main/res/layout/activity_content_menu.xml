@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="WELCOME"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="90dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_menu_picuser" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ราคากลาง" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView500"
+                                style="@style/black_type_trash_text"
+                                android:text="กระดาษขาวดำ" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text"
+                                style="@style/block_text_price_num_design"
+                                android:text="8" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/block_text_price_num_bath_design"
+                            android:text="บาท" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView50"
+                                style="@style/black_type_trash_text"
+                                android:text="กระดาษย่อย" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/te786xt"
+                                style="@style/block_text_price_num_design"
+                                android:text="3.4" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/block_text_price_num_bath_design"
+                            android:text="บาท" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+                <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/black_type_trash_text"
+                            android:text="หนังสือพิมพ์" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text"
+                            style="@style/block_text_price_num_design"
+                            android:text="8" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/block_text_price_num_bath_design"
+                        android:text="บาท" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+            <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/black_type_trash_text"
+                        android:text="PET ใสสะอาด" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text"
+                        style="@style/block_text_price_num_design"
+                        android:text="13" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/block_text_price_num_bath_design"
+                    android:text="บาท" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/black_type_trash_text"
+                        android:text="PET สี" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text"
+                        style="@style/block_text_price_num_design"
+                        android:text="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/block_text_price_num_bath_design"
+                    android:text="บาท" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_buy_type_trash_sub_design"></LinearLayout>
+
+            <LinearLayout style="@style/block_text_buy_price_trash_design">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/black_type_trash_text"
+                        android:text="อลูมิเนียมกระป๋อง" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text"
+                        style="@style/block_text_price_num_design"
+                        android:text="38" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/block_text_price_num_bath_design"
+                    android:text="บาท" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

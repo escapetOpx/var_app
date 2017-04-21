@@ -9,4 +9,6 @@ public class AppConfig {
     // Server user register url
     public static String URL_REGISTER = ROOT_URL + "user_register.php";
 
+    public static String URL_BARCODE = ROOT_URL + "scan_barcode.php";
+
 }

@@ -1,84 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_cal1_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context=".CalculatorActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.var_app.var_app.MenuActivity"
+    tools:showIn="@layout/app_bar_menu_cal">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="ประเภท"
-        android:id="@+id/textView4"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:fontFamily="sans-serif" />
+        android:layout_height="match_parent"
+        android:background="#F3F5F6"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tspinner" />
 
-    <TextView
-        android:text="จำนวน"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/textView5"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:fontFamily="sans-serif" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="จำนวน (กิโลกรัม)"
-        android:ems="10"
-        android:id="@+id/wet"
-        android:textSize="14sp" />
 
-    <Button
-        android:text="คำนวณเลย"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:id="@+id/calbutton" />
-<LinearLayout
-    android:layout_marginTop="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+            <!--LinearLayout
 
-    <TextView
-        android:text="มูลค่า :"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:fontFamily="sans-serif" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="ราคารวม"
-        android:ems="10"
-        android:id="@+id/valuee"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:textColor="#e84e4a" />
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="จำนวนรายการขยะ"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
-</LinearLayout>
+                <LinearLayout
+                    style="@style/spinner_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
 
+                    <Spinner
+                        android:id="@+id/spinner46"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/country_arrays" />
+                </LinearLayout>
+
+
+            </LinearLayout-->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/spinner_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/type_text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/tspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="20dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/spinner_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="@string/weight_text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/wet"
+                        android:layout_width="136dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:ems="10"
+                        android:hint="ใส่น้ำหนัก"
+                        android:textColor="#1D976C"
+                        android:textColorHint="#1D976C"
+                        android:inputType="textPhonetic"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="@string/kilo_text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:text="คำนวณเลย"
+                    style="@style/btn_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/calbutton" />
+                <LinearLayout
+                    style="@style/spinner_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/value_text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/valuee"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#1D976C"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/bath_text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/backtomenu"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="170dp"
+                    android:text="กลับสู่หน้าหลัก"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cal1</string>
+
     <string name="title_activity_app">app</string>
     <string name="title_activity_activity">activity</string>
     <string name="title_activity_helper">helper</string>
@@ -13,4 +13,56 @@
     <string name="welcome">Welcome</string>
     <string name="btn_logout">LOGOUT</string>
     <string name="name">Fullname</string>
+    <string name="mainfirst">หน้าแรก</string>
+    <string name="app_name">VAR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="price_text">ราคา</string>
+    <string name="type_text">ประเภท</string>
+    <string name="weight_text">น้ำหนัก</string>
+    <string name="bath_kilo_text">บาท/กก.</string>
+    <string name="kilo_text">กิโลกรัม</string>
+    <string name="descrip_text">รายละเอียดสินค้า</string>
+    <string name="amphur_text">เขต / อำเภอ</string>
+    <string name="province_text">จังหวัด</string>
+    <string name="phone_text">เบอร์มือถือ</string>
+    <string name="sell_text">ลงขาย</string>
+    <string name="value_text">มูลค่า</string>
+    <string name="bath_text">บาท</string>
+    <string name="bottle_text">ขวด</string>
+    <string name="mili_text">มิลลิลิตร</string>
+    <string name="g_text">กรัม</string>
+    <string name="amount_text">จำนวน</string>
+    <string name="addressproduct_text">ระบุพื้นที่สินค้า</string>
+    <string name="sum_value_text">มูลค่ารวม</string>
+    <string-array name="country_arrays">
+        <item>ข้าว</item>
+        <item>United States</item>
+        <item>United Kingdom</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+    </string-array>
+    <string-array name="province">
+        <item>ทุกจังหวัด</item>
+        <item>กรุงเทพ</item>
+    </string-array>
+    <string-array name="type_trash">
+        <item>ทุกจังหวัด</item>
+        <item>กรุงเทพ</item>
+    </string-array>
+    <string name="title_activity_my_goods">MyGoodsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ref_ref_text">พลาสติกอัดไว้แล้ว
+
+        ติดต่อเพิ่มเติม facebook:
+        Supapozt line:supapozt</string>
+    <string name="buy_recom_text">ใส่ข้อมูลครบ ทำให้ขายเร็ว
+        </string>
+    <string name="title_activity_main_meun">หน้าหลัก</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_menu">MenuActivity</string>
 </resources>

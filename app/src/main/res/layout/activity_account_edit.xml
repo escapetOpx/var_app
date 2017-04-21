@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_marginLeft="325dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="แก้ไขข้อมูลส่วนตัว"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="ชื่อ-นามสกุล"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/input_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="เบอร์โทรศัพท์"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/btn_green"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:text="บันทึก" />
+</LinearLayout>

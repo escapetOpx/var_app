@@ -77,7 +77,7 @@ public class LoginActivity extends Activity {
             public void onSuccess(String result) {
                 hideDialog();
                 UserInfo.setData(result);
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -90,10 +90,10 @@ public class LoginActivity extends Activity {
             }
         }).execute();
     }
-     private void showDialog() {
-         if (!pDialog.isShowing())
-             pDialog.show();
-     }
+    private void showDialog() {
+        if (!pDialog.isShowing())
+            pDialog.show();
+    }
 
     private void hideDialog() {
         if (pDialog.isShowing())
