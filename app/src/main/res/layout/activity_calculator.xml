@@ -3,10 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.var_app.var_app.MenuActivity"
-    tools:showIn="@layout/app_bar_menu_cal">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -198,16 +195,7 @@
 
 
                 </LinearLayout>
-                <TextView
-                    android:id="@+id/backtomenu"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:layout_height="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="170dp"
-                    android:text="กลับสู่หน้าหลัก"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
+
             </LinearLayout>
 
 

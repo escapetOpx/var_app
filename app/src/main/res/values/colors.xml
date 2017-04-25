@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@drawable/code_bg_bar_green</color>
+    <color name="colorPrimary">#2fe09f</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#1D976C</color>
 

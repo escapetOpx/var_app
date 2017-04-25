@@ -101,7 +101,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/text"
+                                android:id="@+id/tex5t"
                                 style="@style/block_text_price_num_design"
                                 android:text="8" />
 
@@ -168,7 +168,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/text"
+                            android:id="@+id/te54xt"
                             style="@style/block_text_price_num_design"
                             android:text="8" />
 
@@ -203,7 +203,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/text"
+                        android:id="@+id/te745xt"
                         style="@style/block_text_price_num_design"
                         android:text="13" />
 
@@ -232,7 +232,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/text"
+                        android:id="@+id/te338xt"
                         style="@style/block_text_price_num_design"
                         android:text="1" />
 

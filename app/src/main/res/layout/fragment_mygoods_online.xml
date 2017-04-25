@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="reterntozero.var2.MyGoodsActivity">
+    >
 
     <ScrollView
         android:layout_width="fill_parent"

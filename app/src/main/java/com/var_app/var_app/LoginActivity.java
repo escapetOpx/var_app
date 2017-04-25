@@ -79,7 +79,7 @@ public class LoginActivity extends Activity {
                 UserInfo.setData(result);
                 Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
-                finish();
+
             }
 
             @Override

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.ActionBar;
 
 import java.util.ArrayList;
 
@@ -21,7 +23,7 @@ public class CalculatorActivity extends AppCompatActivity {
     EditText weightEdittext;
     Button calButton , nextButton;
     TextView valueTextview;
-    TextView calbacktomenu;
+    //TextView calbacktomenu;
 //    String name, size, type;
 
     @Override
@@ -32,25 +34,25 @@ public class CalculatorActivity extends AppCompatActivity {
         weightEdittext = (EditText) findViewById(R.id.wet);
         calButton = (Button) findViewById(R.id.calbutton);
         valueTextview = (TextView) findViewById(R.id.valuee);
-        calbacktomenu = (TextView) findViewById(R.id.backtomenu);
+     //   calbacktomenu = (TextView) findViewById(R.id.backtomenu);
 
         FrameLayout contentFrameLayout = (FrameLayout) findViewById(R.id.content_frame); //Remember this is the FrameLayout area within your activity_main.xml
         getLayoutInflater().inflate(R.layout.activity_menu, contentFrameLayout);
 
-        calbacktomenu.setOnClickListener(new View.OnClickListener(){
+        /*calbacktomenu.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent i = new Intent(CalculatorActivity.this,
                         MenuActivity.class);
                 startActivity(i);
-                finish();
+
             }
-        });
+        });*/
 
         ArrayList<String> typeList = new ArrayList<>();
         final ArrayList<Integer> priceList = new ArrayList<>();
 
         typeList.add("กระดาษขาวดำ");
-        typeList.add("กระดาษย่่อย");
+        typeList.add("กระดาษย่อย");
         typeList.add("หนังสือพิมพ์");
         typeList.add("PET ใส");
         typeList.add("PET สี");
@@ -98,6 +100,8 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
 
 

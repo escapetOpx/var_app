@@ -135,7 +135,7 @@ public class RegisterActivity extends Activity {
                         RegisterActivity.this,
                         LoginActivity.class);
                 startActivity(intent);
-                finish();
+
             }
 
             @Override
