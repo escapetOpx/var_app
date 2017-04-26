@@ -71,7 +71,6 @@ public class MenuActivity extends AppCompatActivity
         selectFragment(new HomePageFragment());
 
 
-
     }
 
     @Override
@@ -110,6 +109,7 @@ public class MenuActivity extends AppCompatActivity
         manager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("Back").commit();
         manager.executePendingTransactions();
     }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

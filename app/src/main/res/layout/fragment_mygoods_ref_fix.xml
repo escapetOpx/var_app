@@ -122,9 +122,6 @@
                     android:layout_marginLeft="30dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:maxLength="3"
-                    android:textColor="#1D976C"
-                    android:textColorHint="#1D976C"
                     android:textSize="15sp" />
 
                 <TextView
@@ -166,9 +163,7 @@
                     android:layout_marginStart="15.5dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:maxLength="5"
-                    android:textColor="#1D976C"
-                    android:textColorHint="#1D976C"
+
                     android:textSize="15sp" />
 
                 <TextView
@@ -207,12 +202,11 @@
                     android:id="@+id/editText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
                     android:layout_marginStart="15dp"
+                    android:layout_marginRight="15dp"
                     android:ems="1000"
                     android:inputType="textPersonName"
-                    android:maxLength="50"
-                    android:textColor="@color/black"
+
                     android:textSize="15sp" />
 
 
@@ -279,9 +273,6 @@
                     android:layout_marginLeft="25dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:textColor="#1D976C"
-                    android:textColorHint="#1D976C"
-                    android:maxLength="10"
                     android:textSize="15sp" />
 
 

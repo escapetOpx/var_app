@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.var_app.var_app.MenuActivity"
+    tools:showIn="@layout/app_bar_menu">
 
     <LinearLayout
         android:layout_width="match_parent"

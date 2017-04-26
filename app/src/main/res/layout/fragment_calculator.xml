@@ -125,11 +125,13 @@
                         android:layout_width="136dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="25dp"
+                        android:allowUndo="false"
                         android:ems="10"
                         android:hint="ใส่น้ำหนัก"
+                        android:maxLength="7"
+                        android:inputType="number"
                         android:textColor="#1D976C"
                         android:textColorHint="#1D976C"
-                        android:inputType="textPhonetic"
                         android:textSize="15sp" />
 
                     <TextView
