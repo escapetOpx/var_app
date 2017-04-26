@@ -33,7 +33,7 @@ public class HomePageFragment extends Fragment {
 
         txtName = (TextView) v.findViewById(R.id.name);
         txtEmail = (TextView) v.findViewById(R.id.email);
-        //usernameview = (TextView) findViewById(R.id.userview);
+
 
         txtName.setText(UserInfo.getFullName());
         txtEmail.setText(UserInfo.getEmail());
