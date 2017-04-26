@@ -11,4 +11,8 @@ public class AppConfig {
 
     public static String URL_BARCODE = ROOT_URL + "scan_barcode.php";
 
+    public static String URL_SELL_CREATE = ROOT_URL + "deal_create.php";
+
+    public static String URL_GET_TRASH_TYPE = ROOT_URL + "calculator.php";
+
 }
