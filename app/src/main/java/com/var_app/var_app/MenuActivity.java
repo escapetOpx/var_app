@@ -74,6 +74,9 @@ public class MenuActivity extends AppCompatActivity
 
         selectFragment(new HomePageFragment());
 
+        TextView drawerUsername = (TextView) navigationView.getHeaderView(0).findViewById(R.id.drawer_user_fullname);
+        drawerUsername.setText(UserInfo.getFullName());
+
 
     }
 

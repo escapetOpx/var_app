@@ -9,41 +9,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            style="@style/spinner_buy_design"
-            android:gravity="center">
-
-            <LinearLayout
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-
-                android:orientation="vertical">
-
-                <Spinner
-                    android:id="@+id/spinner456"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:entries="@array/country_arrays" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/line_ver_design"/>
-
-            <LinearLayout
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <Spinner
-                    android:id="@+id/spinner556"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:entries="@array/country_arrays" />
-            </LinearLayout>
-
-
-        </LinearLayout>
 
         <ListView
             android:id="@+id/buy_listview"
