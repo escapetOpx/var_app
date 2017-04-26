@@ -49,6 +49,7 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         });*/
 
+
         ArrayList<String> typeList = new ArrayList<>();
         final ArrayList<Integer> priceList = new ArrayList<>();
 
