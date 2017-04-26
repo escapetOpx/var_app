@@ -15,4 +15,5 @@ public class AppConfig {
 
     public static String URL_GET_TRASH_TYPE = ROOT_URL + "calculator.php";
 
+    public static String URL_GET_BUY = ROOT_URL + "deal_view.php";
 }

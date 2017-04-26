@@ -1,13 +1,26 @@
 package layout;
 
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import com.squareup.okhttp.FormEncodingBuilder;
+import com.var_app.var_app.LoginActivity;
+import com.var_app.var_app.MenuActivity;
 import com.var_app.var_app.R;
+import com.var_app.var_app.helper.APIRequest;
+import com.var_app.var_app.helper.AppConfig;
+import com.var_app.var_app.helper.UserInfo;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 
 /**
@@ -15,6 +28,8 @@ import com.var_app.var_app.R;
  */
 public class BuyFragment extends Fragment {
 
+    ListView buyListView;
+    private ProgressDialog pDialog;
 
     public BuyFragment() {
         // Required empty public constructor
@@ -25,7 +40,58 @@ public class BuyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_buy, container, false);
+        View v = inflater.inflate(R.layout.fragment_buy, container, false);
+
+        buyListView = (ListView) v.findViewById(R.id.buy_listview);
+
+        pDialog = new ProgressDialog(getActivity());
+        pDialog.setCancelable(false);
+
+        getData();
+
+        return v;
+    }
+
+    private void getData() {
+        showDialog();
+        FormEncodingBuilder formBody = new FormEncodingBuilder();
+
+        new APIRequest(getActivity(), formBody, AppConfig.URL_GET_BUY, new APIRequest.APIResponse() {
+            @Override
+            public void onSuccess(String result) {
+                hideDialog();
+                setupListView(result);
+
+            }
+
+            @Override
+            public void onError(String error) {
+                hideDialog();
+                Toast.makeText(getActivity(), "Error " + error, Toast.LENGTH_LONG).show();
+
+            }
+        }).execute();
+    }
+
+    private void setupListView(String result){
+
+        try {
+            JSONArray array = new JSONArray(result);
+            buyListView.setAdapter(new BuyListViewAdapter(getActivity(), array));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void showDialog() {
+        if (!pDialog.isShowing())
+            pDialog.show();
+    }
+
+    private void hideDialog() {
+        if (pDialog.isShowing())
+            pDialog.dismiss();
     }
 
 }
