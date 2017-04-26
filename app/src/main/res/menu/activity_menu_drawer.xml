@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="หน้าแรก" />
+        <item
+            android:id="@+id/nav_sellbuy"
+            android:icon="@drawable/ic_menu_sellbuy"
+            android:title="ซื้อ - ขาย" />
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/ic_menu_scale"
+            android:title="คำนวณราคาขยะโดยน้ำหนัก" />
+
+        <item
+            android:id="@+id/nav_cal2"
+            android:icon="@drawable/ic_menu_bar"
+            android:title="คำนวณราคาขยะด้วยบาร์โค้ด" />
+    </group>
+
+
+
+</menu>
