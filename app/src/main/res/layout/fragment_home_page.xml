@@ -37,14 +37,14 @@
                 app:srcCompat="@drawable/ic_menu_picuser" />
 
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/home_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/email"
+                android:id="@+id/home_email_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -100,7 +100,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/te45xt"
+                            android:id="@+id/price1"
                             style="@style/block_text_price_num_design"
                             android:text="8" />
 
@@ -134,7 +134,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/te786xt"
+                            android:id="@+id/price2"
                             style="@style/block_text_price_num_design"
                             android:text="3" />
 
@@ -167,7 +167,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/te74xt"
+                        android:id="@+id/price3"
                         style="@style/block_text_price_num_design"
                         android:text="8" />
 
@@ -200,7 +200,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/t78ext"
+                    android:id="@+id/price4"
                     style="@style/block_text_price_num_design"
                     android:text="13" />
 
@@ -231,7 +231,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tex78t"
+                    android:id="@+id/price5"
                     style="@style/block_text_price_num_design"
                     android:text="1" />
 
@@ -262,7 +262,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/text"
+                    android:id="@+id/price6"
                     style="@style/block_text_price_num_design"
                     android:text="38" />
 
@@ -274,13 +274,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
 
 </LinearLayout>

@@ -36,8 +36,12 @@ public class MenuActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_awesome_toolbar);
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("หน้าแรก");
+
+
 /*
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
@@ -83,10 +87,11 @@ public class MenuActivity extends AppCompatActivity
         }
     }
 
-    /*@Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
+        Toolbar tb = (Toolbar) findViewById(R.id.my_awesome_toolbar);
+        tb.inflateMenu(R.menu.activity_menu_drawer);
         return true;
     }
 
@@ -98,12 +103,12 @@ public class MenuActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        /*if (id == R.id.action_settings) {
             return true;
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
-    }*/
+    }
     private void selectFragment(Fragment fragment) {
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("Back").commit();
@@ -119,21 +124,25 @@ public class MenuActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             fragment = new HomePageFragment();
+            getSupportActionBar().setTitle("หน้าแรก");
             selectFragment(fragment);
 
             // Handle the camera action
         } else if (id == R.id.nav_sellbuy) {
             fragment = new BuySellFragment();
+            getSupportActionBar().setTitle("ซื้อ - ขาย");
             selectFragment(fragment);
 
 
         } else if (id == R.id.nav_cal) {
             fragment = new CalculatorFragment();
+            getSupportActionBar().setTitle("คำนวณ");
             selectFragment(fragment);
 
 
         } else if (id == R.id.nav_cal2) {
             fragment = new BarcodeCalculatorFragment();
+            getSupportActionBar().setTitle("คำนวณ");
             selectFragment(fragment);
 
         }

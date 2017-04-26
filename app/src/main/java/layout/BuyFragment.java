@@ -5,9 +5,11 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,6 +32,7 @@ public class BuyFragment extends Fragment {
 
     ListView buyListView;
     private ProgressDialog pDialog;
+    JSONArray array;
 
     public BuyFragment() {
         // Required empty public constructor
@@ -76,8 +79,18 @@ public class BuyFragment extends Fragment {
     private void setupListView(String result){
 
         try {
-            JSONArray array = new JSONArray(result);
+            array = new JSONArray(result);
             buyListView.setAdapter(new BuyListViewAdapter(getActivity(), array));
+
+            buyListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    BuyInfoFragment f = new BuyInfoFragment();
+                    f.setData(i, array );
+                    selectFragment(f);
+                }
+            });
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -92,6 +105,12 @@ public class BuyFragment extends Fragment {
     private void hideDialog() {
         if (pDialog.isShowing())
             pDialog.dismiss();
+    }
+
+    private void selectFragment(Fragment fragment) {
+        FragmentManager manager = getActivity().getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("Back").commit();
+        manager.executePendingTransactions();
     }
 
 }

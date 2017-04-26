@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="14dp">
+
+                    <TextView
+                        android:id="@+id/buy_info_trashtype"
+                        style="@style/green_light_text"
+                        android:layout_width="165dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="PET ใสสะอาด" />
+
+                    <TextView
+                        android:id="@+id/buy_info_date"
+                        style="@style/gray_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="29 มี.ค.2017" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        style="@style/num_ref_design"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView570"
+                            style="@style/gray_num_ref_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/weight_text" />
+
+                        <TextView
+                            android:id="@+id/buy_info_weight"
+                            style="@style/green_num_ref_text"
+                            android:text="3" />
+
+                        <TextView
+                            android:id="@+id/textView5900"
+                            style="@style/gray_num_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/kilo_text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/num_ref_design"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView581500"
+                            style="@style/gray_num_ref_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_text" />
+
+                        <TextView
+                            android:id="@+id/buy_info_price"
+                            style="@style/green_num_ref_text"
+                            android:text="13" />
+
+                        <TextView
+                            android:id="@+id/textView570160"
+                            style="@style/gray_num_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/bath_kilo_text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/num_ref_design"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView51800"
+                            style="@style/gray_num_ref_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ราคาสุทธิ" />
+
+                        <TextView
+                            android:id="@+id/buy_info_total"
+                            style="@style/green_num_ref_text"
+                            android:text="3999.00" />
+
+                        <TextView
+                            android:id="@+id/textView50160"
+                            style="@style/gray_num_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/bath_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/buy_info_details"
+                        style="@style/gray_ref_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:paddingEnd="40dp"
+                        android:paddingStart="40dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/ref_ref_text" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_design">
+
+                        <TextView
+                            android:id="@+id/buy_info_province"
+                            style="@style/gray_ref_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_buy_ref_loca"
+                            android:text="เขตสาทร" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_picuser_design">
+
+                        <TextView
+                            android:id="@+id/buy_info_name"
+                            style="@style/gray_ref_text"
+                            android:drawableLeft="@drawable/ic_buy_ref_pic_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ศุภเสกข์ จันทร์จรัสวัฒนา" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_design">
+
+                        <TextView
+                            style="@style/green_ref_text"
+                            android:drawableLeft="@drawable/ic_buy_ref_tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text="โทรศัพท์"
+                            android:id="@+id/buy_info_phone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+                    <LinearLayout style="@style/block_text_design">
+
+                        <TextView
+                            style="@style/green_ref_text"
+                            android:drawableLeft="@drawable/ic_buy_ref_sms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text="ส่ง SMS"
+                            android:id="@+id/buy_info_email" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/line_design"></LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
