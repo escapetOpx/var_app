@@ -19,14 +19,17 @@ import android.widget.TextView;
 
 import com.var_app.var_app.helper.UserInfo;
 
+import layout.BarcodeCalculatorFragment;
+import layout.BuySellFragment;
 import layout.CalculatorFragment;
+import layout.HomePageFragment;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private TextView txtName;
+  /*  private TextView txtName;
     private TextView txtEmail;
-    //private TextView usernameview;
+    //private TextView usernameview;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +38,13 @@ public class MenuActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         //usernameview = (TextView) findViewById(R.id.userview);
 
         txtName.setText(UserInfo.getFullName());
-        txtEmail.setText(UserInfo.getEmail());
+        txtEmail.setText(UserInfo.getEmail());*/
 
         //usernameview.setText(UserInfo.getFullName());
 
@@ -64,6 +67,11 @@ public class MenuActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        selectFragment(new HomePageFragment());
+
+
+
     }
 
     @Override
@@ -109,30 +117,26 @@ public class MenuActivity extends AppCompatActivity
         Fragment fragment = null;
         int id = item.getItemId();
 
-        /*if (id == R.id.nav_home) {
-            Intent i = new Intent(MenuActivity.this,
-                    MenuActivity.class);
-            startActivity(i);
+        if (id == R.id.nav_home) {
+            fragment = new HomePageFragment();
+            selectFragment(fragment);
 
             // Handle the camera action
         } else if (id == R.id.nav_sellbuy) {
-            Intent i = new Intent(MenuActivity.this,
-                    SellBuyActivity.class);
-            startActivity(i);
+            fragment = new BuySellFragment();
+            selectFragment(fragment);
 
 
-        }*/ if (id == R.id.nav_cal) {
+        } else if (id == R.id.nav_cal) {
             fragment = new CalculatorFragment();
             selectFragment(fragment);
 
 
-        }/* else if (id == R.id.nav_cal2) {
-            Intent i = new Intent(MenuActivity.this,
-                    BarcodeActivity.class);
-            startActivity(i);
+        } else if (id == R.id.nav_cal2) {
+            fragment = new BarcodeCalculatorFragment();
+            selectFragment(fragment);
 
-
-        }*/
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
