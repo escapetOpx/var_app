@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="@drawable/code_bg_bar_green"/>
+
 
         <FrameLayout
             android:layout_width="match_parent"
