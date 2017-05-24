@@ -40,7 +40,7 @@ public class HomePageFragment extends Fragment {
 
 
         txtName = (TextView) v.findViewById(R.id.home_name_text);
-        txtEmail = (TextView) v.findViewById(R.id.home_email_text);
+        //txtEmail = (TextView) v.findViewById(R.id.home_email_text);
 
         final TextView[] Hprices = new TextView[10];
         Hprices[0] = (TextView) v.findViewById(R.id.price1);
@@ -81,7 +81,7 @@ public class HomePageFragment extends Fragment {
 
 
         txtName.setText(UserInfo.getFullName());
-        txtEmail.setText(UserInfo.getEmail());
+        //txtEmail.setText(UserInfo.getEmail());
 
         return v;
     }
